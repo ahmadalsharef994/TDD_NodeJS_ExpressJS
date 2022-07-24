@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: false }));
 
 mongoose
   .connect(
-    "mongodb+srv://admin:admin@cluster0.knadi.mongodb.net/temp?retryWrites=true&w=majority",
+    "mongodb+srv://xxxxx:xxxxxx@xxxxx.xxxxx.mongodb.net/xxxxxx?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useCreateIndex: true,
@@ -17,7 +17,7 @@ mongoose
   )
   .then(() =>
     console.log(
-      `Connected to MongoDB at mongodb+srv://admin:<password>@cluster0.knadi.mongodb.net/temp?retryWrites=true&w=majority`
+      `Connected to MongoDB at mongodb+srv://xxxxx:xxxxxx@xxxxx.xxxxx.mongodb.net/xxxxxx?retryWrites=true&w=majority`
     )
   )
   .catch((err) => {
